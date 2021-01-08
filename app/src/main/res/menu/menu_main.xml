@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mobileexercice.MainActivity">
+    <item
+        android:id="@+id/itemInicio"
+        android:title="@string/menu_item_inicio" />
+    <item
+        android:id="@+id/menu_item_diasSemana"
+        android:title="@string/menu_item_diasSemana" >
+        <menu >
+            <item
+                android:id="@+id/menu_item_diasSemana_dom"
+                android:title="@string/menu_item_diasSemana_dom" />
+            <item
+                android:id="@+id/menu_item_diasSemana_seg"
+                android:title="@string/menu_item_diasSemana_seg" />
+            <item
+                android:id="@+id/menu_item_diasSemana_ter"
+                android:title="@string/menu_item_diasSemana_ter" />
+            <item
+                android:id="@+id/menu_item_diasSemana_qua"
+                android:title="@string/menu_item_diasSemana_qua" />
+            <item
+                android:id="@+id/menu_item_diasSemana_qui"
+                android:title="@string/menu_item_diasSemana_qui" />
+            <item
+                android:id="@+id/menu_item_diasSemana_sex"
+                android:title="@string/menu_item_diasSemana_sex" />
+            <item
+                android:id="@+id/menu_item_diasSemana_sab"
+                android:title="@string/menu_item_diasSemana_sab" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_item_sair"
+        android:title="@string/menu_item_sair" />
+    <item
+        android:id="@+id/itemSobre"
+        android:orderInCategory="100"
+        android:title="@string/menu_item_sobre"
+        app:showAsAction="never" />
+</menu>
