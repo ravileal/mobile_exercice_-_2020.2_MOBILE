@@ -55,5 +55,7 @@
     <string name="titleApp">Doação de Sangue</string>
     <string name="btn_frag_agendar_cadastro">Agendar doação</string>
     <string name="Aceitar_Termos">Aceito Termos de Doação</string>
+    <string name="Vazio"></string>
+    <string name="cidadesDelocais">Cidades de coleta</string>
 
 </resources>

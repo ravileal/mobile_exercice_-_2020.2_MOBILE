@@ -1,10 +1,12 @@
 package com.example.mobileexercice;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.view.View;
 
@@ -12,10 +14,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.PopupMenu;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -56,6 +60,8 @@ public class ActivityCadastro extends AppCompatActivity {
         addListenerRadioButton();
         addListenerTextView();
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -113,7 +119,7 @@ public class ActivityCadastro extends AppCompatActivity {
 
             StringBuffer result = new StringBuffer();
 
-            result.append("Notificacoes: "+tglBtnNotificacaoes.getText());
+            result.append("Termos aceitos: "+tglBtnNotificacaoes.getText());
             result.append("\nSexo: " + radBtn.getText());
 
             Toast.makeText(ActivityCadastro.this, result.toString(), Toast.LENGTH_SHORT).show();

@@ -1,5 +1,6 @@
 package com.example.mobileexercice;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import com.google.android.material.appbar.AppBarLayout;
@@ -13,6 +14,7 @@ public class ActivityPrincipal extends AppCompatActivity {
     private TabLayout tabLayout;
     private AppBarLayout appBarLayout;
     private ViewPager viewPager;
+    private MediaPlayer mediaPlayer;
 
 
     @Override
@@ -31,5 +33,12 @@ public class ActivityPrincipal extends AppCompatActivity {
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+
+        addListenerSound();
+        mediaPlayer.start();
+    }
+
+    private void addListenerSound(){
+        mediaPlayer = MediaPlayer.create(this, R.raw.windowsstartup);
     }
 }

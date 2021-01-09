@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mobileexercice">
+    package="com.example.mobileexercice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="30" />
 
     <application
         android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MobileExercice">
+        android:testOnly="true"
+        android:theme="@style/Theme.MobileExercice" >
         <activity
-            android:name=".ActivityPrincipal"
+            android:name="com.example.mobileexercice.ActivityPrincipal"
             android:label="@string/title_activity_inicio"
-            android:theme="@style/Theme.MobileExercice.NoActionBar">
+            android:theme="@style/Theme.MobileExercice.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,13 +29,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActivityCadastro_2"
+            android:name="com.example.mobileexercice.ActivityCadastro_2"
             android:label="@string/title_activity_tela_cadastro2"
             android:theme="@style/Theme.MobileExercice.NoActionBar" />
         <activity
-            android:name=".ActivityCadastro"
+            android:name="com.example.mobileexercice.ActivityCadastro"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MobileExercice.NoActionBar"/>
+            android:theme="@style/Theme.MobileExercice.NoActionBar" />
     </application>
 
 </manifest>
