@@ -1,5 +1,6 @@
 package com.example.mobileexercice;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +25,9 @@ public class FragmentAgendar extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private View view;
+    private Button btn;
 
     public FragmentAgendar() {
         // Required empty public constructor
@@ -59,6 +64,14 @@ public class FragmentAgendar extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_agendar, container, false);
+        view = inflater.inflate(R.layout.fragment_agendar, container, false);
+        btn = view.findViewById(R.id.btn_frag_agendar_cadastro);
+        btn.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), ActivityCadastro.class);
+            startActivity(intent);
+        });
+
+        return view;
     }
+
 }

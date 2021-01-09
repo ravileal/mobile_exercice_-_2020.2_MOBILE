@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.mobileexercice.MainActivity">
+    tools:context="com.example.mobileexercice.ActivityCadastro">
     <item
         android:id="@+id/itemInicio"
         android:title="@string/menu_item_inicio" />
