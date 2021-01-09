@@ -32,12 +32,6 @@
             app:tabIndicatorColor="#FF554D">
 
             <com.google.android.material.tabs.TabItem
-                android:id="@+id/tab_item_inicio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tab_item_inicio" />
-
-            <com.google.android.material.tabs.TabItem
                 android:id="@+id/tab_item_agendar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -48,6 +42,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_item_locais" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_item_inicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_item_inicio" />
 
         </com.google.android.material.tabs.TabLayout>
 
