@@ -1,6 +1,5 @@
 package com.example.mobileexercice;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -118,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
 
             Toast.makeText(MainActivity.this, result.toString(), Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(getApplicationContext(), TelaCadastro2.class);
+            Intent intent = new Intent(getApplicationContext(), ActivityPrincipal.class);
             startActivity(intent);
         });
     }

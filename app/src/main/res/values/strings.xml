@@ -43,5 +43,13 @@
     <string name="popup_item_o_less">O-</string>
     <string name="title_activity_tela_cadastro2">TelaCadastro2</string>
     <string name="btn_voltar_cadastro1">Voltar</string>
+    <string name="title_activity_inicio">Inicio</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_item_inicio">Inicio</string>
+    <string name="tab_item_agendar">Agendar</string>
+    <string name="tab_item_locais">Locais</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
